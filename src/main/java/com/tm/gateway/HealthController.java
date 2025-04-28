@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthController {
     @GetMapping("/health")
     public ResponseEntity<String> healthCheck() {
-        log.info("in health endpoint");
+        log.info("In health endpoint... ");
         return ResponseEntity.ok("Spring Cloud Gateway is up and running");
     }
 }

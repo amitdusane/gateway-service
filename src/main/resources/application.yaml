@@ -15,3 +15,7 @@ spring:
           uri: http://order-service:8082
           predicates:
             - Path=/order/**
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG

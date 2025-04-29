@@ -12,13 +12,13 @@ spring:
           predicates:
             - Path=/user/**
           filters:
-            - name: RequestLoggingGatewayFilterFactory
+            - name: RequestLogging
         - id: order-service
           uri: http://order-service:8082
           predicates:
             - Path=/order/**
           filters:
-            - name: RequestLoggingGatewayFilterFactory
+            - name: RequestLogging
 
 logging:
   level:
